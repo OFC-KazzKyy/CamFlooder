@@ -27,7 +27,7 @@ pip install scapy argparse
 Run the script with the following command:
 
 ```bash
-python3 camflooder.py
+python3 camflood.py
 ```
 
 ## Examples:
@@ -35,13 +35,13 @@ python3 camflooder.py
 1. To perform a 60-second attack with 1000 packets per second, a payload of 10000 bytes, 1000 threads, and no packet limit:
 
 ```bash
-python3 camflooder.py --target_ip 192.168.1.1 --rate 1000 --payload 10000 --threads 1000 --duration 60
+python3 camflood.py --target_ip 192.168.1.1 --rate 1000 --payload 10000 --threads 1000 --duration 60
 ```
 
 2. To perform a 60-second attack with 1000 packets per second, a payload of 10000 bytes, 1000 threads, with a packet limit of 1000000:
 
 ```bash
-python3 camflooder.py --target_ip 192.168.1.1 --rate 1000 --payload 10000 --threads 1000 --duration 60 --max_packets 1000000
+python3 camflood.py --target_ip 192.168.1.1 --rate 1000 --payload 10000 --threads 1000 --duration 60 --max_packets 1000000
 ```
 
 ## Parameters
